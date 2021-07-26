@@ -1,0 +1,145 @@
+/* global/universal selector */
+* {
+    padding: 0;
+    margin : 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* agar ketika menambah ketika ada padding ditambah di dalam kontener */
+    box-sizing: border-box;
+
+
+}
+
+#navbar {
+    /* background-color:#192a56; */
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+#navbar .menu a {
+    color :#192a56;
+    text-decoration: none;
+    background-color: white;
+    padding-top: 12px;
+    display : inline-block;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+}
+
+#navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+#header {
+
+    background-color: grey;
+    background-image: url('https://images.unsplash.com/photo-1503066211613-c17ebc9daef0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    padding-top:150px;
+    padding-bottom: 150px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+ 
+}
+
+#header h1 {
+    font-size:50px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+}
+
+#header p {
+    color: white;
+}
+
+#header a {
+    background-color: #192a56;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 30px;
+
+}
+
+
+.container {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+.about {
+    background-color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    }
+
+.body .image img {
+    width: 200px;
+    border-radius: 100%;
+}
+.profile p {
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: gray;
+    padding-left : 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.profile h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.profile {
+    margin : 30px;
+}
+
+#footer {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color:#192a56;
+    color: white;
+
+}
