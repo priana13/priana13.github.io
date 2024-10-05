@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 
     <title>Priana</title>
 </head>
 
-<body class="bg-slate-900 text-gray-100">
+<body class="bg-slate-900 text-gray-100" x-data x-init="">
     <div class="mx-auto max-w-screen-lg px-3 py-6">
         <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a
                 href="/demo/astro-boilerplate">
@@ -22,11 +23,14 @@
                         <rect x="9" y="8" width="6" height="12" rx="1"></rect>
                         <rect x="15" y="4" width="6" height="16" rx="1"></rect>
                         <path d="M4 20h14"></path>
-                    </svg>Priana Saputra
+                    </svg>
+                    <span>Priana Saputra</span>
+
                 </div>
             </a>
             <nav>
                 <ul class="flex gap-x-3 font-medium text-gray-200">
+                    <li class="hover:text-white"><a href="#contact">Contact</a></li>
                     <li class="hover:text-white"><a href="https://github.com/priana13">GitHub</a></li>
                 </ul>
             </nav>
@@ -63,6 +67,7 @@
                 <div class="mt-3 flex gap-2 text-normal font-semibold">
                     <span class="my-auto me-2">Frontend: </span>
                     <span class="rounded-md px-2 py-1 bg-pink-400 text-pink-900">Livewire</span>
+                    <span class="rounded-md px-2 py-1 bg-cyan-400 text-cyan-900">AlpineJs</span>
                     <span class="rounded-md px-2 py-1 bg-indigo-400 text-indigo-900">Inertia + React</span>
                     <span class="rounded-md px-2 py-1 bg-slate-400 text-slate-900">NextJs</span>
                     <span class="rounded-md px-2 py-1 bg-blue-400 text-blue-900">Tailwindcss</span>
@@ -205,7 +210,7 @@
             </a>
         </div>
     </div>
-    <div class="mx-auto max-w-screen-lg px-3 py-6">
+    <div class="mx-auto max-w-screen-lg px-3 py-6" id="contact">
         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div class="sm:w-7/12">
                 <div class="text-3xl font-bold">Need discuss a project ?
